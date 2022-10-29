@@ -4,33 +4,30 @@
 #include "catch.hpp"
 #include "main.hpp"
 // tests for exercise 1
-TEST_CASE("Ex1 findMin() ", "[example]")
+
+TEST_CASE("Ex1 countsubstring() ", "[example]")
 {
-	vector<int> number = {2, 1, 4, 4, 0, 4, 3, 3, 4, 0};
-	int size = 10;
-	int result, usernum;
-	// srand(time(0));
-	// makevector(number, size);
-	printvector(number);
-	usernum = 4;
-	result = deleteone(number, usernum);
-	INFO(" 4 should be deleted 4 times. Your return value is " << result);
-	REQUIRE(result == 4);
-	INFO(" Vector size is 6. Your size is " << number.size());
-	REQUIRE(number.size() == 6);
+	int cnt;
+
+	cnt = countsubstring("th");
+	cout << "The count of occurrence " << cnt << endl;
+
+	INFO("The result should  17\n");
+	REQUIRE(cnt == 17);
 	cout << "--------------------------------------------------\n";
-	usernum = 0;
-	result = deleteone(number, usernum);
-	INFO(" 0 should be deleted 2 times. Your return value is " << result);
-	REQUIRE(result == 2);
-	INFO(" Vector size is 4. Your size is " << number.size());
-	REQUIRE(number.size() == 4);
-	cout << "--------------------------------------------------\n";
-	usernum = 20;
-	result = deleteone(number, usernum);
-	INFO("The result should be 0 when the value is not found\n");
-	REQUIRE(result == 0);
-	REQUIRE(number.size() == 4);
+
+	// REQUIRE(number[idx] == usernum);
+}
+
+TEST_CASE("Ex2 countsubstring() ", "[example]")
+{
+	int cnt;
+
+	cnt = countsubstring("la");
+	cout << "The count of occurrence " << cnt << endl;
+
+	INFO("The result should  5\n");
+	REQUIRE(cnt == 5);
 	cout << "--------------------------------------------------\n";
 
 	// REQUIRE(number[idx] == usernum);

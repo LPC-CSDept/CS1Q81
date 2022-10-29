@@ -1,14 +1,11 @@
 #include "main.hpp"
 
+int countsubstring(string);
 int main()
 {
-	vector<int> number;
-	int size = 10, result;
-	int usernum;
-	srand(time(0));
-	makevector(number, size);
-	printvector(number);
-	cout << "Enter the one integer value\n";
-	cin >> usernum;
-	result = deleteone(number, usernum);
+	int cnt;
+
+	// cnt = countsubstring("th");
+	cnt = countsubstring("la");
+	cout << "The count of occurrence " << cnt << endl;
 }

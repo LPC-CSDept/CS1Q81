@@ -1,26 +1,12 @@
-#include <algorithm>
-#include <cstdlib>
-#include <ctime>
+#include <fstream>
 #include <iostream>
-#include <iterator>
-#include <vector>
 using namespace std;
 
-void makevector(vector<int> &, int);
-void printvector(vector<int>);
-int deleteone(vector<int> &);
-
-void makevector(vector<int> &vec, int size)
+int countsubstring(string keystring)
 {
-	for (int i = 0; i < size; i++)
-		vec.push_back(rand() % 5);
-}
-void printvector(vector<int> vec)
-{
-	for (int v : vec)
-		cout << v << "\t";
-	cout << endl;
-}
-int deleteone(vector<int> &vec, int usernum)
-{
+	int count = 0;
+	// **************************************************
+	// **** Make your code
+	// **************************************************
+	return count;
 }

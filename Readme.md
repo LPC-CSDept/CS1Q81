@@ -5,12 +5,11 @@
 
 ---
 
-### Quiz 7: Question 4
+### Quiz 8: Question 1
 
 ### Edit the "main.hpp"
 
 > Complete functions <br>
-> void deleteone(vector<int> &vec)
 
 > > To run "main.hpp" locally, you can use the "main.cpp". <br>
 > > g++ --std=c++17 main.cpp <br>
