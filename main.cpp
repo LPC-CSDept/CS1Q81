@@ -5,7 +5,7 @@ int main()
 {
 	int cnt;
 
-	// cnt = countsubstring("th");
-	cnt = countsubstring("la");
+	cnt = countsubstring("th");
+	// cnt = countsubstring("la");
 	cout << "The count of occurrence " << cnt << endl;
 }
